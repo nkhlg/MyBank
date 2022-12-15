@@ -4,8 +4,10 @@ const {Sequelize, DataTypes} = require('sequelize');
 const sequelize = new Sequelize({
     dialect: 'mysql',
     host: 'localhost',
-    username: 'root',
-    password: '2000',
+    username: 'root'
+    password: 'root',
+
+
     database: 'mybank'
 });
 
@@ -101,6 +103,7 @@ const Bank = sequelize.define('Bank', {
         defaultValue: 'bank'
     }
 });
+
 const Account = sequelize.define('Account', {
     accountId : {
         type : DataTypes.BIGINT,
