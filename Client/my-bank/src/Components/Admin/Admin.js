@@ -9,20 +9,23 @@ function Admin() {
                     <div className="right-div">
                         <div className="card">
                             <ul className="list-group list-group-flush">
-                                <li className="list-group-item">iD : 2</li>
                                 <li className="list-group-item">Name : Hrithik</li>
                                 <li className="list-group-item">Email : hrithikrnz@gmail.com</li>
-                                <li className="list-group-item">phone : 9048110054</li>
+                                <li className="list-group-item">Phone : 9048110054</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div className="adminBtnDiv">
                     <div>
+                        <Link to=""> 
                         <button type="submit" className="adminBtn">Loan Approval</button>
+                        </Link>
                     </div>
                     <div>
-                    <button type="submit" className="adminBtn">Account Approval</button>
+                        <Link to="">
+                        <button type="submit" className="adminBtn">Account Approval</button>
+                        </Link>    
                     </div>
                 </div>
             </div>
