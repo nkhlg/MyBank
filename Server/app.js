@@ -10,6 +10,7 @@ const  ApplyLoanRoute = require('./apps/user/routes');
 const UserDetailRoutes = require('./apps/admin/routes');  
 const LoanDetailRoutes = require('./apps/admin/routes');  
 
+
 //-------------------------------
 const dotEnv = require('dotenv');
 
