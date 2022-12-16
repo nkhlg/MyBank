@@ -1,0 +1,10 @@
+
+.mainbody{
+    margin-top: 5vh;
+   
+}
+.sub-body{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+}

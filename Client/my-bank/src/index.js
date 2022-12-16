@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import UserHome from './Components/User/UserHome';
+import User from './Components/User/User'
+import Loan from './Components/User/Loan';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,6 +15,19 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+
+  },
+  {
+    path: "/userDashboard",
+    element: <UserHome/>, children:[{
+      path : "/userDashboard",
+      element : <User/>
+    },
+    {
+      path : "/userDashboard/loan",
+      element : <Loan/>
+    }
+  ]
   }
 ]);
 
