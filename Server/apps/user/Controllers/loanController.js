@@ -2,7 +2,7 @@ const { User, Account, Transaction, Loan } = require('../../../data/models');
 
 module.exports.ApplyLoan = async (req, res) => {
     const id = 1;//should take it from token as req.user.id
-
+    console.log(req.body)
     const accountData = await Account.findOne({
         where: { userId: id }
     })
@@ -25,8 +25,6 @@ module.exports.ApplyLoan = async (req, res) => {
             {
                 where: { userId: id }
             }
-
-
         )
             .then(data => {
                 res.send('Apply successfully')
