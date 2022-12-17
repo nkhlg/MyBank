@@ -15,6 +15,10 @@ import UserHome from './Components/User/UserHome';
 import User from './Components/User/User'
 import Loan from './Components/User/Loan';
 
+import PersonalLoan from './Components/User/LoanDetails/PersonalLoan';
+import HomeLoan from './Components/User/LoanDetails/HomeLoan';
+import GoldLoan from './Components/User/LoanDetails/Goldloan';
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -59,7 +63,21 @@ const router = createBrowserRouter([
     },
     {
       path : "/userDashboard/loan",
-      element : <Loan/>
+      element : <Loan/>, children:[{
+        path : "/userDashboard/loan/personalLoan",
+        element : <PersonalLoan/>
+      },
+      {
+        path : "/userDashboard/loan/homeLoan",
+        element : <HomeLoan/>
+      },
+      {
+        path : "/userDashboard/loan/goldLoan",
+        element : <GoldLoan/>
+      }
+
+      
+    ]
     }
   ]
 
