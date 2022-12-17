@@ -9,6 +9,9 @@ import Loanapprove from './Components/Admin/LoanApprove';
 import Accountapprovehome from './Components/Admin/Accountapprovehome'
 import Accountapprove from './Components/Admin/Accountapprove';
 import reportWebVitals from './reportWebVitals';
+import UserHome from './Components/User/UserHome';
+import User from './Components/User/User'
+import Loan from './Components/User/Loan';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -18,6 +21,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+
   },
   {
     path: "/admin",
@@ -37,6 +41,21 @@ const router = createBrowserRouter([
     element : <Accountapprovehome/>,children:[
       {path: '/admin/accountApprove',element: <Accountapprove/>}
     ]
+
+
+  },
+  {
+    path: "/userDashboard",
+    element: <UserHome/>, children:[{
+      path : "/userDashboard",
+      element : <User/>
+    },
+    {
+      path : "/userDashboard/loan",
+      element : <Loan/>
+    }
+  ]
+
   }
 ]);
 
