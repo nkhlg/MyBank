@@ -8,13 +8,17 @@ import Loanapprovehome from './Components/Admin/Loanapprovehome';
 import Loanapprove from './Components/Admin/LoanApprove';
 import Accountapprovehome from './Components/Admin/Accountapprovehome'
 import Accountapprove from './Components/Admin/Accountapprove';
+
 import reportWebVitals from './reportWebVitals';
+import Login from "./components/Login/Login";
 import UserHome from './Components/User/UserHome';
 import User from './Components/User/User'
 import Loan from './Components/User/Loan';
+
 import PersonalLoan from './Components/User/LoanDetails/PersonalLoan';
 import HomeLoan from './Components/User/LoanDetails/HomeLoan';
 import GoldLoan from './Components/User/LoanDetails/Goldloan';
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -25,6 +29,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
 
+    children: [
+      {path: "login", element: <Login/>},
+     
+    ]
   },
   {
     path: "/admin",
@@ -74,9 +82,11 @@ const router = createBrowserRouter([
   ]
 
   }
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
