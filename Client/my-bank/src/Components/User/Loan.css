@@ -13,9 +13,7 @@ body {
     /* .loansDiv{
         background-color: #9FEF00;
     } */
- ul{
-    list-style: none;
-}
+ 
  .loansDiv
 {
     display: flex;
@@ -32,6 +30,17 @@ body {
     width:200px;
     font-weight: bolder;
     
+}
+.loan-body{
+    display: flex;
+    justify-content: center;
+}
+.loan-content{
+    margin: 30px ;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    width: 80%;
+    height: 50vh;
 }
 
 

@@ -1,0 +1,24 @@
+
+.main{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 50vh;
+    
+}
+
+.leftDiv{
+    height: 20vh;
+    width: 30vw;
+    margin-top: 10px;
+    
+}
+
+.rightDiv{
+    margin-left: 20px;
+    height: 20vh;
+    width: 30vw;
+    
+}   
