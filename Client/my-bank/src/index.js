@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import Adminhome from './Components/Admin/Adminhome';
 import Admin from  './Components/Admin/Admin';
+import Loanapprovehome from './Components/Admin/Loanapprovehome';
+import Loanapprove from './Components/Admin/LoanApprove';
+import Accountapprovehome from './Components/Admin/Accountapprovehome'
+import Accountapprove from './Components/Admin/Accountapprove';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -19,6 +23,19 @@ const router = createBrowserRouter([
     path: "/admin",
     element: <Adminhome/>,children:[
       {path:'/admin',element: <Admin/>}
+    ]
+  },
+
+  {
+    path: "/admin/loanApprove",
+    element : <Loanapprovehome/>,children:[
+      {path: '/admin/loanApprove',element :<Loanapprove/>}
+    ]
+  },
+  {
+    path: "/admin/accountApprove",
+    element : <Accountapprovehome/>,children:[
+      {path: '/admin/accountApprove',element: <Accountapprove/>}
     ]
   }
 ]);

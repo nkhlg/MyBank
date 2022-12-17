@@ -18,12 +18,12 @@ function Admin() {
                 </div>
                 <div className="adminBtnDiv">
                     <div>
-                        <Link to=""> 
+                        <Link to="/admin/loanApprove"> 
                         <button type="submit" className="adminBtn">Loan Approval</button>
                         </Link>
                     </div>
                     <div>
-                        <Link to="">
+                        <Link to="/admin/accountApprove">
                         <button type="submit" className="adminBtn">Account Approval</button>
                         </Link>    
                     </div>
