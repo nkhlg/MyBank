@@ -5,6 +5,7 @@ const user = require('./Controllers/userProfileController');
 
 const userController = require('./Controllers/userController');
 const Deposit = require('./Controllers/DepositWithdrawController');
+const LoanApply = require('./Controllers/loanController');
 
 
 
@@ -21,6 +22,7 @@ router.get('/transaction/:id',Deposit.getAll);
 
 router.post('/deposit',Deposit.deposit_funds);
 router.post('/withdraw',Deposit.withdrawal_funds);
+router.post('/loan',LoanApply.ApplyLoan);
 
 
 
